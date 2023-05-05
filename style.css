@@ -36,7 +36,7 @@ a{
 }
 
 /*Index page*/
-h2{
+h2, h1{
     margin-top: 5%;
     text-align: center;
     font-family: var(--FontBold);
@@ -48,6 +48,7 @@ h2{
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.356);
+    margin-bottom: 2%;
 }
 .textimgabout{
     text-align: center;
@@ -80,6 +81,9 @@ footer > div{
     header > div > span{
         position: relative;
         left: 30%;
+    }
+    hr{
+        display: none;
     }
     a{
         text-decoration: none;
