@@ -6,10 +6,10 @@
 }
 *{
     box-sizing: border-box;
-   /* border: 1px red solid;*/
-   font-family: var(--Font);
-   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.377);
-   margin: 0px;
+    /*border: 1px red solid;*/
+    font-family: var(--Font);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.377);
+    margin: 0px;
 }
 /*Header*/
 header{
@@ -57,7 +57,7 @@ h2{
 }
 /*Footer*/
 footer{
-    font-size: 4vw;
+    font-size: 9pt;
     background-color: black;
     color: aliceblue;
     border: 1px solid black;
@@ -65,4 +65,74 @@ footer{
 }
 footer > div{
     margin-top: 5%;
+}
+/*Para pc*/
+@media screen and (min-width: 1024px){
+    /*Header*/
+    header{
+        height: 100px;
+    }
+    header > div{
+        position: relative; 
+        text-align: center;
+        top: -70px;
+    }    
+    header > div > span{
+        position: relative;
+        left: 30%;
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        font-family: var(--FontBold);
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        font-family: var(--FontBold);
+    }
+    /*About page*/
+    .containerimg{
+        display: flex;
+    }
+    .containerimg div{
+        width: 50%;
+        margin-top: 5%;
+    }
+    .imgabout{
+        display: block;
+        margin: 2% auto 0% auto;
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.356);
+        width: 70%;
+    }
+    .textimgabout{
+        width: 80%;
+        position: relative;
+        text-align: center;
+        text-align: justify;
+        margin: 4%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h2{
+       position: relative;
+       top: 15%;
+    }
+    /*Footer*/
+    footer{
+        margin-top: 3%;
+        font-size: 12pt;
+        height: 150px;
+        background-color: black;
+        color: aliceblue;
+        border: 1px solid black;
+        line-height: 1vw;
+    }
+    footer div{
+        position: relative;
+        top: -37%;
+    }
 }
