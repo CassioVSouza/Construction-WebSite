@@ -9,6 +9,7 @@
    /* border: 1px red solid;*/
    font-family: var(--Font);
    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.377);
+   margin: 0px;
 }
 /*Header*/
 header{
@@ -35,6 +36,11 @@ a{
 }
 
 /*Index page*/
+h2{
+    margin-top: 5%;
+    text-align: center;
+    font-family: var(--FontBold);
+}
 .imgabout{
     display: block;
     width: 90%;
@@ -48,4 +54,15 @@ a{
     text-align: justify;
     width: 92%;
     margin: 4%;
+}
+/*Footer*/
+footer{
+    font-size: 4vw;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid black;
+    line-height: 3vw;
+}
+footer > div{
+    margin-top: 5%;
 }
