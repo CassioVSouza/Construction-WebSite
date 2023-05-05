@@ -71,6 +71,7 @@ footer > div{
 @media screen and (min-width: 1024px){
     /*Header*/
     header{
+        background-image: linear-gradient(270deg, #5a483c, #755D4D);
         height: 100px;
     }
     header > div{
