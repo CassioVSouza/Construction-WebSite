@@ -65,7 +65,7 @@ footer{
     line-height: 3vw;
 }
 footer > div{
-    margin-top: 5%;
+    margin-top: 6%;
 }
 /*Contactpage*/
 .imgcontact{
@@ -173,7 +173,7 @@ footer > div{
     footer{
         margin-top: 3%;
         font-size: 12pt;
-        height: 150px;
+        height: 180px;
         background-color: black;
         color: aliceblue;
         border: 1px solid black;
@@ -181,6 +181,6 @@ footer > div{
     }
     footer div{
         position: relative;
-        top: -37%;
+        top: -25%;
     }
 }
