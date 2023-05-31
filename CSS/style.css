@@ -39,6 +39,11 @@
     border: 1px solid black;
     font-size: 8pt;
     cursor: pointer;
+    transition: 0.5s;
+}
+.about input:hover{
+    border: 1px solid grey;
+    color: gray;
 }
 /*Services*/
 .services img{
@@ -188,4 +193,77 @@ footer{
     color: #fff;
     font-size: 10pt;
     font-family: 'Roboto', sans-serif;
+}
+/*Para pc*/
+@media screen and (min-width: 768px) {
+    .about p{
+        text-align: center;
+        font-size: 20pt;
+        width: 60%;
+        margin: auto;
+    }
+    .about input{
+        width: 10%;
+    }
+    .container-services{
+        display: flex;
+    }
+    .services img{
+        width: 100%;
+    }
+    .services{
+        padding-top: 5%;
+    }
+    .services > div > div{
+        width: 24%;
+    }
+    .services h2{
+        margin-left: 6px;
+    }
+    .container-project{
+        display: flex;
+    }
+    .project > div > div{
+        margin-left: 4%;
+    }
+    .project input{
+        width: 20%;
+    }
+    .container-culture{
+        display: flex;
+    }
+    .culture{
+        padding-top: 5%;
+    }
+    .culture > div > div > div{
+        width: 30%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .culture h2{
+        margin-left: 4%;
+    }
+    .culture > div > p{
+        width: 40%;
+        margin-left: 4%;
+        margin-top: 3%;
+    }
+    .frase p{
+        width: 50%;
+        margin: auto;
+        font-size: 25pt;
+    }
+    .frase aside{
+        background-color: rgba(128, 128, 128, 0.425);
+        border-radius: 10px;
+        width: 40%;
+        margin: auto;
+    }
+    .frase{
+        background-image: url(house.jpg);
+    }
+    footer{
+        line-height: 150%;
+        text-align: center;
+    }
 }
