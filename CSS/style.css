@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 700px;
     width: 100%;
 }
 .indexback h1{
@@ -187,6 +187,54 @@
     border-radius: 10px;
     padding: 2% 0 2% 0;
 }
+/*Menu*/
+.menu{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 10%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.menu img{
+    width: 100%;
+}
+.menu img:hover{
+    cursor: pointer;
+    filter: brightness(200%)
+}
+.chooses{
+    margin-top: 20%;
+    margin-left: 3%;
+    font-size: 20pt;
+}
+.chooses p{
+    margin-top: 4%;
+}
+.contato{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+.options{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+}
+.options a:hover{
+    color: gray;
+    cursor: pointer;
+}
 footer{
     background-color: black;
     padding: 2% 0 2% 0;
@@ -195,6 +243,22 @@ footer{
     font-family: 'Roboto', sans-serif;
 }
 /*Para pc*/
+@keyframes menuanim {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes menuanimopen {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0px;
+    }
+}
 @media screen and (min-width: 768px) {
     .about p{
         text-align: center;
