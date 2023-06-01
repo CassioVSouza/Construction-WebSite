@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+header > h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.const{
+    font-size: 10pt;
+}
+/*About*/
+.container-about h2{
+    text-align: center;
+    margin-top: 10%;
+}
+.container-about p{
+    margin: 2%;
+    text-align: center;
+}
+.container-about img{
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+.MoreAbout{
+    position: relative;
+    top: -20px;
+    z-index: -1;
+    background-color: rgb(224, 224, 224);
+    padding: 10% 0 10% 0;
+}
+.MoreAbout p{
+    font-family: 'Roboto', sans-serif;
+    margin: 10% 2% 0 2%;
+}
+.bebold{
+    font-weight: 900;
+}
+/*Team*/
+.container-team img{
+    width: 100%;
+    margin-top: 5%;
+}
+.theteam h2{
+    font-size: 10pt;
+    margin-left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.theteam p{
+    margin: 5% 0 0 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+}
+.container-teamPC{
+    display: none;
+}
+.teamCell img{
+    width: 100%;
+    margin-top: 5%;
+}
+.teamCell p{
+    text-align: center;
+}
+.flexbuttons{
+    display: flex;
+}
+#right{
+    position: absolute;
+    left: 0;
+}
+#left{
+    position: absolute;
+    right: 0;
+}
+#right:hover, #left:hover{
+    cursor: pointer;
+}
+/*Menu*/
+.menu{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 10%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.menu img{
+    width: 100%;
+}
+.menu img:hover{
+    cursor: pointer;
+    filter: brightness(200%)
+}
+.chooses{
+    margin-top: 20%;
+    margin-left: 3%;
+    font-size: 20pt;
+}
+.chooses p{
+    margin-top: 4%;
+}
+.contato{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+.options{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+}
+.options a:hover{
+    color: gray;
+    cursor: pointer;
+}
+footer{
+    margin-top: 10%;
+    background-color: black;
+    padding: 2% 0 2% 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+}
+/*Animations*/
+@keyframes menuanim {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes menuanimopen {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0px;
+    }
+}
