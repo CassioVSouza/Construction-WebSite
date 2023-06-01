@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: initial;
 }
 /*Header*/
 header > h1 {
@@ -52,7 +53,7 @@ header > h1 {
     font-weight: 900;
 }
 .theteam p{
-    margin: 5% 0 0 2%;
+    margin: 1% 0 0 2%;
     font-family: 'Roboto', sans-serif;
     font-size: 11pt;
 }
@@ -72,13 +73,40 @@ header > h1 {
 #right{
     position: absolute;
     left: 0;
+    font-weight: 900;
 }
 #left{
     position: absolute;
     right: 0;
+    font-weight: 900;
 }
 #right:hover, #left:hover{
     cursor: pointer;
+}
+/*Projects*/
+.projects{
+    padding: 6% 0 10% 0;
+    margin-top: 9%;
+    background-color: gainsboro;
+}
+.projects p{
+    text-align: center;
+}
+.projects input{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    height: 30px;
+    width: 40%;
+    border: 1px solid black;
+    font-size: 8pt;
+    cursor: pointer;
+    background-color: gainsboro;
+    transition: 0.5s;
+}
+.projects input:hover{
+    border: 1px solid grey;
+    color: gray;
 }
 /*Menu*/
 .menu{
@@ -113,7 +141,7 @@ header > h1 {
     font-size: 12pt;
 }
 .options{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     background-color: #fff;
@@ -129,12 +157,12 @@ header > h1 {
     cursor: pointer;
 }
 footer{
-    margin-top: 10%;
     background-color: black;
     padding: 2% 0 2% 0;
     color: #fff;
     font-size: 10pt;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 /*Animations*/
 @keyframes menuanim {
@@ -151,5 +179,74 @@ footer{
     }
     to{
         left: 0px;
+    }
+}
+@media screen and (min-width: 768px) {
+    /*Titulo*/
+    header{
+        margin-top: 1%;
+        font-size: 30pt;
+    }
+    /*About*/
+    .container-about h2{
+        font-size: 40pt;
+    }
+    .container-about p{
+        font-size: 20pt;
+        width: 40%;
+        margin: 4% auto 0 auto;
+    }
+    .MoreAbout{
+        padding: 3% 0 5% 0;
+    }
+    .MoreAbout p{
+        margin: 2% auto 0 auto;
+        width: 30%;
+    }
+    /*The team*/
+    .teamCell{
+        display: none;
+    }
+    .container-teamPC{
+        display: flex;
+        justify-content: space-between;
+        margin: 3% 2% 0 2%;
+    }
+    .container-teamPC p{
+        text-align: center;
+    }
+    .container-teamPC div{
+        width: 23%;
+    }
+    .container-teamPC img{
+        width: 100%;
+    }
+    .theteam > p{
+        width: 30%;
+    }
+    /*Projects*/
+    .projects{
+        padding: 6% 0 6% 0;
+    }
+    .projects p{
+        width: 40%;
+        margin: auto;
+        font-size: 20pt;
+    }
+    .projects input{
+        width: 10%;
+    }
+    /*Menu*/
+    .menu {
+        width: 3%;
+    }
+    .chooses {
+        margin-left: 7%;
+    }
+    .contato {
+        left: 7%;
+    }
+    .options {
+        width: 40%;
     }
 }

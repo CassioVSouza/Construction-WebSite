@@ -220,7 +220,7 @@
     font-size: 12pt;
 }
 .options{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     background-color: #fff;
@@ -235,6 +235,7 @@
     color: gray;
     cursor: pointer;
 }
+/*Footer*/
 footer{
     background-color: black;
     padding: 2% 0 2% 0;
@@ -329,5 +330,18 @@ footer{
     footer{
         line-height: 150%;
         text-align: center;
+    }
+    /*Menu*/
+    .menu {
+        width: 3%;
+    }
+    .chooses {
+        margin-left: 7%;
+    }
+    .contato {
+        left: 7%;
+    }
+    .options {
+        width: 40%;
     }
 }
