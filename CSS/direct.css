@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Titulo*/
+.indexback{
+    background-image: url(direct.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.indexback h1{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+    font-size: 30pt;
+}
+/*Body contractor*/
+.contractor {
+    font-family: 'roboto', arial, helvetica, sans-serif;
+}
+.contractor p{
+    padding-top: 10%;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+.contractor img{
+    width: 100%;
+}
+.container-contract{
+    display: flex;
+    padding-top: 10%;
+    margin-left: 2%;
+}
+.container-contract > div{
+    width: 45%;
+    margin: auto;
+}
+.LeftP p{
+    text-align: left;
+}
+.contractor h2{
+    text-align: center;
+    font-size: 15pt;
+    margin-top: 10%;
+}
+.contractor input{
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    background-color: transparent;
+    height: 30px;
+    width: 40%;
+    border: 1px solid black;
+    font-size: 8pt;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contractor input:hover{
+    border: 1px solid grey;
+    color: gray;
+}
+/*Menu*/
+.menu{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 10%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.menu img{
+    width: 100%;
+}
+.menu img:hover{
+    cursor: pointer;
+    filter: brightness(200%)
+}
+.chooses{
+    margin-top: 20%;
+    margin-left: 3%;
+    font-size: 20pt;
+}
+.chooses p{
+    margin-top: 4%;
+}
+.contato{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+.options{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+}
+.options a:hover{
+    color: gray;
+    cursor: pointer;
+}
+/*Footer*/
+footer{
+    margin-top: 4%;
+    background-color: black;
+    padding: 2% 0 2% 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+@keyframes menuanim {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes menuanimopen {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0px;
+    }
+}
+/*Para pc*/
+@media screen and (min-width: 768px){
+    /*P do contractor*/
+        .contractor p{
+            width: 40%;
+            padding-top: 4%;
+        }
+        /*Input*/
+        .contractor input{
+            width: 10%;
+        }
+        /*Menu*/
+        .menu {
+            width: 3%;
+        }
+        .chooses {
+            margin-left: 7%;
+        }
+        .contato {
+            left: 7%;
+        }
+        .options {
+            width: 40%;
+        }
+}
