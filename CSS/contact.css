@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: initial;
+}
+/*Header*/
+header > h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.const{
+    font-size: 10pt;
+}
+/*Main*/
+.Frase p{
+    width: 90%;
+    text-align: center;
+    font-size: 14pt;
+    margin: auto;
+    padding-top: 5%;
+}
+/*Form*/
+.forms{
+    padding: 5% 0 5% 0;
+    font-family: 'roboto', sans-serif;
+    width: 70%;
+    margin: auto;
+}
+.forms input{
+    display: block;
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+}
+.forms select{
+    font-family: 'roboto', sans-serif;
+    display: block;
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+}
+.forms p{
+    margin-top: 3%;
+    text-align: left;
+    font-size: 10pt;
+}
+.forms textarea{
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+}
+/*Menu*/
+.menu{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 10%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.menu img{
+    width: 100%;
+}
+.menu img:hover{
+    cursor: pointer;
+    filter: brightness(200%)
+}
+.chooses{
+    margin-top: 20%;
+    margin-left: 3%;
+    font-size: 20pt;
+}
+.chooses p{
+    margin-top: 4%;
+}
+.contato{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+.options{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+}
+.options a:hover{
+    color: gray;
+    cursor: pointer;
+}
+/*Footer*/
+footer{
+    background-color: black;
+    padding: 2% 0 2% 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/*Animations*/
+@keyframes menuanim {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes menuanimopen {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0px;
+    }
+}
+@media screen and (min-width: 768px) {
+    /*Titulo*/
+    header{
+        margin-top: 1%;
+        font-size: 30pt;
+    }
+    .Frase p{
+        width: 50%;
+    }
+    /*Form*/
+    .container-form{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-form div{
+        width: 48%;
+    }
+    .forms{
+        width: 50%;
+    }
+    /*Menu*/
+    .menu {
+        width: 3%;
+    }
+    .chooses {
+        margin-left: 7%;
+    }
+    .contato {
+        left: 7%;
+    }
+    .options {
+        width: 40%;
+    }
+}

@@ -18,6 +18,48 @@
     text-align: center;
     color: #fff;
 }
+/*Direct back*/
+.indexback2{
+    background-image: url(direct.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.indexback2 h1{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+/*Commercial back*/
+.indexback3{
+    background-image: url(commercial.jpeg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.indexback3 h1{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+/*Resotarion back*/
+.indexback4{
+    background-image: url(heritage.jpeg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.indexback4 h1{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
 /*Body contractor*/
 .contractor {
     font-family: 'roboto', arial, helvetica, sans-serif;
